@@ -1,0 +1,10 @@
+<div [class.container1]="selectedImage.id === 1" [class.container2]="selectedImage.id === 2" *ngIf="selectedImage">
+    <div class="row" *ngFor="let number1 of [1,2,3,4,5]">
+        <div class="button" id="{{number1+number2}}" (click)="onClick(number1+number2)" *ngFor="let number2 of [10, 20, 30, 40, 50]">
+        </div>
+    </div>
+    <input [(ngModel)]="answer" placeholder="answer here"><button type="submit" (click)="answerCheck(answer)">Submit</button>
+</div>
+<div *ngIf="!selectedImage">
+    <p>Waiting for you to choose some</p>
+</div>

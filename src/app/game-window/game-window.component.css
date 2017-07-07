@@ -1,0 +1,9 @@
+li {
+    float: left;
+    width: 550px;
+    height: 550px;
+}
+
+ul{
+    list-style-type: none;
+}
